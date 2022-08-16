@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEGREY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container-header">
+            <div class="header-wrap-logo">
+                <a href=""><img src="./assets/img/logo/1.webp" alt=""></a>
+            </div>
+            <div class="header-wrap-main">
+                <ul class="menu-main-lv1">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                </ul>
+            </div>
+            <div class="header-wrap-search">
+                <div> 
+                    <button class="btn-search"> <a href=""><i class="fa-solid fa-magnifying-glass"></i> </a> </button>
+                    <div class="input-search"><input type="text" placeholder="Tìm kiếm sản phẩm..."> </div>
+                </div>
+               
+            </div>
+            <div class="header-wrap-buyticket">
+                <button class="btn-ticket btn"> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+                <p class="text-ticket">
+                    <button class="btn-buy-text">Giỏ Hàng</button>
+                </p>
+            </div>
+        </div>
+        <div class="flex-container-main">   
+            <div class="slideshow-container">
+                <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+                 <div class="mySlides fade">
+                   <div class="numbertext">1 / 3</div>
+                   <img src="./assets/img/slider/1.jpg" style="width:100%">
+                   <div class="dots" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">2 / 3</div>
+                   <img src="./assets/img/slider/2.jpg" style="width:100%">
+                   <div class="dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                 </div>
+                <div class="mySlides fade">
+                   <div class="numbertext">3 / 3</div>
+                   <img src="./assets/img/slider/3.jpg" style="width:100%">
+                   <div class="dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                 </div>
+                 <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./assets/img/slider/4.jpg" style="width:100%">
+                    <div class="dots" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                  </div>
+                <!-- Nút điều khiển mũi tên-->
+                 <a class="prev" onclick="plusSlides(-1)">❮</a>
+                 <a class="next" onclick="plusSlides(1)">❯</a>
+               </div>
+               <br>
+              <!-- Nút tròn điều khiển slideshow-->
+               
+               <div class="discourd">
+                <h2>Đặc quyền cho bạn hôm nay!</h2>
+                <div class="row row-discourd">
+                    <div class="col-md-3">                            
+                        <h6>Degrey giao hỏa tốc</h6>
+                        <p>Giờ đây bạn có thể nhận hàng nhanh trong ngày mà không cần chờ đợi tại Sài Gòn</p>
+                    </div>
+                    <div class="col-md-3">                            
+                        <h6>Hà Nội Freeship</h6>
+                        <p>Degrey dành tặng Hà Nội mã freeship 0đ (số lượng có hạn)</p>
+                        <button class="coppy-code">Sao chép mã</button>
+                    </div>
+                    <div class="col-md-3">                            
+                        <h6>Tặng 125.000đ</h6>
+                        <p>Áp dụng đặc biệt cho đơn hàng từ 2,5 triệu đồng.</p>
+                        <button class="coppy-code">Sao chép mã</button>
+                    </div>
+                    <div class="col-md-3">                            
+                        <h6>Khuyến mãi đến 10%</h6>
+                        <p>Mã giảm 10% cho hoá đơn mua hàng trên 5 triệu đồng</p>
+                        <button class="coppy-code">Sao chép mã</button>
+                    </div>
+                </div>
+            <!-- Slider start--> 
+                <!-- <div class="ol">
+                    <div class="ol-prev">
+                        <i class="fa fa-angle-left slider-prev"></i> 
+                    </div>   
+                    <div class="ol-next">
+                        <i class="fa fa-angle-right slider-next"></i>
+                    </div>  
+                </div>         -->
+                <!-- Slider start--> 
+                <!-- <div class="slider">              
+                    <div class="slider-radio">
+                        <input type="radio" name="inputSlider" id="img1">
+                        <input type="radio" name="inputSlider" id="img2">
+                        <input type="radio" name="inputSlider" id="img3">
+                        <input type="radio" name="inputSlider" id="img4">    
+                    </div>  
+                    <div class="slider-imgs">
+                        <img src="./assets/img/slider/1.jpg" alt="img1" class="imgSlider" id="imgSlider1">
+                        <img src="./assets/img/slider/2.jpg" alt="img2" class="imgSlider" id="imgSlider2">
+                        <img src="./assets/img/slider/3.jpg" alt="img3" class="imgSlider" id="imgSlider3">
+                        <img src="./assets/img/slider/4.jpg" alt="img4" class="imgSlider" id="imgSlider4">
+                    </div>                
+                    <div class="lableSlider">
+                        <label for="img1"></label>
+                        <label for="img2"></label>
+                        <label for="img3"></label>
+                        <label for="img4"></label>
+                    </div>  
+                </div>
+                <div class="discourd">
+                    <h2>Đặc quyền cho bạn hôm nay!</h2>
+                    <div class="row row-discourd">
+                        <div class="col-md-3">                            
+                            <h6>Degrey giao hỏa tốc</h6>
+                            <p>Giờ đây bạn có thể nhận hàng nhanh trong ngày mà không cần chờ đợi tại Sài Gòn</p>
+                        </div>
+                        <div class="col-md-3">                            
+                            <h6>Hà Nội Freeship</h6>
+                            <p>Degrey dành tặng Hà Nội mã freeship 0đ (số lượng có hạn)</p>
+                            <button class="coppy-code">Sao chép mã</button>
+                        </div>
+                        <div class="col-md-3">                            
+                            <h6>Tặng 125.000đ</h6>
+                            <p>Áp dụng đặc biệt cho đơn hàng từ 2,5 triệu đồng.</p>
+                            <button class="coppy-code">Sao chép mã</button>
+                        </div>
+                        <div class="col-md-3">                            
+                            <h6>Khuyến mãi đến 10%</h6>
+                            <p>Mã giảm 10% cho hoá đơn mua hàng trên 5 triệu đồng</p>
+                            <button class="coppy-code">Sao chép mã</button>
+                        </div>
+
+                    </div>
+                </div> -->
+                
+            <!-- Slider end--> 
+            <!-- content start -->
+            <div class="section-index-collection">
+                <div class="container-product">
+                    <!-- backback|balo start -->
+                    <div class="container-header">
+                        <a href="">BACKPACKS | BALO</a>
+                        <button>xem tất cả</button>
+                    </div>
+                   <div class="row-product">
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/02545223-210d-42de-87e1-6ab9972d8909_da1f984debd8437e840cb51be29e6aa1_large.webp" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/2.webp" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/3.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/5.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/6.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                    </div>
+                    <div class="row-product">
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/6.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/7.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/8.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/9.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/2.webp" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                   </div>
+                   <div class="container-footer text-center">
+                        <div class="box"> <a class="btn btn-sm animated-button thar-three" href="#">Xem thêm sản phẩm <b>BACKPACKS | BALO</b></a> </div>                  
+                    </div>
+                    <!-- backback|balo end -->
+
+                    <!-- jacket start -->
+                    <div class="container-header">
+                        <a href="">ÁO KHOÁC | JACKET</a>
+                        <button>xem tất cả</button>
+                    </div>
+                    <div class="row-product">
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/1.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/8.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/3.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/6.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/5.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                        </div>
+                        <div class="row-product">
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/6.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/2.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/8.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/2.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                            <div class="col-md-2">
+                                <img src="./assets/img/jacket/1.jpg" alt="">
+                                <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                                <p class="price-list"> 420,000₫</p>
+                            </div>
+                    </div>
+                    <div class="container-footer text-center">
+                            <div class="box"> <a class="btn btn-sm animated-button thar-three" href="#">Xem thêm sản phẩm <b>BACKPACKS | BALO</b></a> </div>                  
+                    </div>
+                    <!-- jacket end -->
+                    <!-- ÁO THUN | TSHIRT START  -->
+                    <div class="container-header">
+                        <a href="">Áo thun | TSHIRT</a>
+                        <button>xem tất cả</button>
+                    </div>
+                   <div class="row-product">
+                        <div class="col-md-2">
+                            <img src="/assets/img/balo/2.webp" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/2.webp" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/3.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/5.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/6.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                    </div>
+                    <div class="row-product">
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/6.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/7.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/8.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/9.jpg" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="./assets/img/balo/2.webp" alt="">
+                            <p class="content-list">Degrey Letter Backpack - DLBP</p>
+                            <p class="price-list"> 420,000₫</p>
+                        </div>
+                   </div>
+                   <div class="container-footer text-center">
+                        <div class="box"> <a class="btn btn-sm animated-button thar-three" href="#">Xem thêm sản phẩm <b>BACKPACKS | BALO</b></a> </div>                  
+                    </div>
+                    <!-- ÁO THUN | TSHIRT END  -->
+                    <!-- set đồ gợi ý start  -->
+                    <div class="container-header">
+                        <a href="">SÉT ĐỒ GỢI Ý</a>
+                    </div>
+                    <div class="row-suggestions">
+                            <div class="col-md-4">
+                                <img src="./assets/img/GOIY/1.jpg" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./assets/img/GOIY/2.jpg" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="./assets/img/GOIY/3.jpg" alt="">
+                            </div>
+                    </div>    
+                     <!-- set đồ gợi ý end  -->
+                     <!-- footer start  -->
+                        <div class="flex-container-footer">
+                            <div class="flex-container-footer__box-footer">  
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 about_shop">
+                                    <h4>Về DEGREY</h4>
+                                    <p>Cái tên Degrey được tạo ra rất ngẫu hứng, xuất phát từ “Chuỗi ngày u buồn về sự nghiệp, tương lai trong quá khứ của chính mình” – theo lời chia sẻ của Degrey’s founder.</p>
+                                    <img src="./assets/img/logofooter/bocongthuong.jpg" alt="">
+                                </div>
+                                <div class="col-md-3 address_inf">
+                                    <div class="address_inf-contact-1">
+                                        <b for="">Địa chỉ: </b>
+                                        <br>
+                                        <br>
+                                        <b>-Sài Gòn:</b>
+                                        <p>43 Huỳnh Văn Bánh P.17 Q.Phú Nhuận
+                                            1041 Luỹ Bán Bích P.Tân Thành Q.Tân Phú
+                                            26 Lý Tự Trọng Q.1 - The New 
+                                            Playground
+                                        </p>
+                                        <b>-Đà Lạt:</b>
+                                        <br>
+                                        <p>11 Khu Hoà Bình P.1</p>
+                                    </div>
+                                    <div class="address_inf-contact-2">
+                                        <b for=""> Điện thoại: </b> 0336311117
+                                        <br>
+                                        <b for="">Email: </b> degrey.vn@gmail.com
+                                    </div>
+                                </div>
+                                <div class="col-md-3 customer_support">
+                                    <b>Hỗ trợ khách hàng</b>
+                                    <ul>
+                                        <li>Shop</li>
+                                        <li>Hướng dẫn đặt hàng</li>
+                                        <li>Chính sách và quy định</li>
+                                        <li>Chính sách bảo mật</li>
+                                        <li>Thông tin sở hữu</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3 customer-care">
+                                    <b>Chăm sóc khách hàng</b>
+                                    <div class="customer-care-nav">
+                                        <div class="contact-footer__call-img">
+                                            <i class="fa-solid fa-phone-volume"></i>
+                                        </div>
+                                        <div class="contact-footer__content">
+                                            <a href="">0336311117</a>
+                                            <a href="">degrey.vn@gmail.com</a>
+                                        </div>
+                                    </div>
+
+                                    <h6>Follow Us</h6>
+                                    <div class="footerNav-social">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </div>
+                                </div>
+                        </div>    
+                    </div>
+                    <div class="flex-container-footer">
+                        <div class="flex-container-footer__box-footer">  
+                        </div>
+                        <div class="flex-container-footer__coppyright">
+                            <p>Copyright © 2022 <a href="https://degrey.vn"> DEGREY VIETNAM</a>. 
+                                <a target="_blank" href="https://www.haravan.com" rel="noreferrer">Powered by Haravan</a>
+                            </p>
+                        </div>
+                    </div>  
+
+                                          <!-- footer start  -->
+                </div>
+            </div>
+            <!-- content end -->    
+
+        </div>    
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
